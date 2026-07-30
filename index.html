@@ -98,7 +98,7 @@
   }
 
   /* ---------- hero ---------- */
-  .rw-hero{padding:76px 0 8px}
+  .rw-hero{padding-top:76px;padding-bottom:8px}
   .rw-eyebrow{
     font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
     text-transform:uppercase;color:var(--brass);margin:0 0 22px;
@@ -115,7 +115,7 @@
   }
 
   /* ---------- signature: risk indicator ---------- */
-  .rw-sri{margin:56px 0 0;padding:0 0 76px}
+  .rw-sri{margin-top:56px;padding-bottom:76px}
   .rw-sri-frame{
     background:var(--card);border:1px solid var(--rule);
     padding:26px 26px 22px;max-width:660px;
@@ -150,7 +150,7 @@
   }
 
   /* ---------- panels ---------- */
-  .rw-panels{border-top:1px solid var(--rule);padding:64px 0 12px}
+  .rw-panels{border-top:1px solid var(--rule);padding-top:64px;padding-bottom:12px}
   .rw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
   .rw-panel{background:var(--card);padding:30px 26px 34px}
   .rw-panel-tag{
@@ -178,7 +178,7 @@
   }
 
   /* ---------- close ---------- */
-  .rw-close{padding:76px 0 84px}
+  .rw-close{padding-top:76px;padding-bottom:84px}
   .rw-close-h{
     font-family:var(--display);font-weight:700;
     font-size:clamp(1.55rem,3vw,2.1rem);letter-spacing:-.02em;
@@ -209,6 +209,13 @@
     .rw-grid{grid-template-columns:1fr}
     .rw-hero{padding-top:52px}
     .rw-cell{font-size:13px}
+  }
+  @media (max-width:560px){
+    .rw-wrap{padding-left:20px;padding-right:20px}
+    .rw-top-in{padding-left:20px;padding-right:20px}
+    .rw-sri-frame{padding:20px 18px 18px}
+    .rw-panel{padding:26px 20px 30px}
+    .rw-cite{padding:18px 20px}
   }
   @media (prefers-reduced-motion:reduce){
     .rw-rise{animation:none;opacity:1;transform:none}
