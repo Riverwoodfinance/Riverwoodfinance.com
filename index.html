@@ -4,25 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Riverwood Finance — Key Information Document production for European funds</title>
-<meta name="description" content="Riverwood Finance builds the production engine behind PRIIP key information documents and related regulatory disclosures for European investment funds.">
+<title>Riverwood Finance — Disclosure data for private and illiquid European funds</title>
+<meta name="description" content="Key information documents, normalised cost and risk data, and product governance for private and illiquid European funds. Every field carries its source.">
 <link rel="canonical" href="https://riverwoodfinance.com/">
 <link rel="icon" href="logo.png">
 
 <meta property="og:site_name" content="Riverwood Finance">
 <meta property="og:title" content="Riverwood Finance">
-<meta property="og:description" content="The engine behind Europe's key information documents. Regulatory disclosure production for European investment funds.">
+<meta property="og:description" content="Every number, back to its source. Disclosure data for private and illiquid European funds.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://riverwoodfinance.com/">
 <meta property="og:image" content="https://riverwoodfinance.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Riverwood Finance — the engine behind Europe's key information documents.">
+<meta property="og:image:alt" content="Riverwood Finance — every number, back to its source.">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Riverwood Finance">
-<meta name="twitter:description" content="The engine behind Europe's key information documents.">
+<meta name="twitter:description" content="Every number, back to its source.">
 <meta name="twitter:image" content="https://riverwoodfinance.com/og-image.png">
 
 <script type="application/ld+json">
@@ -34,330 +34,346 @@
   "email": "info@riverwoodfinance.com",
   "logo": "https://riverwoodfinance.com/logo.png",
   "image": "https://riverwoodfinance.com/og-image.png",
-  "description": "Riverwood Finance builds the production engine behind PRIIP key information documents and related regulatory disclosures for European investment funds, covering the summary risk indicator, cost disclosure and performance scenarios required under Regulation (EU) No 1286/2014.",
-  "knowsAbout": [
-    "PRIIP Key Information Document",
-    "Regulation (EU) No 1286/2014",
-    "Commission Delegated Regulation (EU) 2017/653",
-    "Summary risk indicator",
-    "Performance scenarios",
-    "Cost disclosure",
-    "Alternative investment funds",
-    "UCITS",
-    "Regulatory reporting"
-  ],
-  "areaServed": [
-    { "@type": "Place", "name": "European Union" },
-    { "@type": "Place", "name": "European Economic Area" }
-  ]
+  "description": "Riverwood Finance builds disclosure tooling and data for private and illiquid European investment funds: PRIIP key information documents, normalised cost and risk data with full provenance, and product governance analytics."
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    /* palette derived from the Riverwood wordmark */
-    --navy:#162746;
-    --navy-hi:#1D3358;
-    --navy-lo:#0F1D34;
-    --gold:#C49138;
-    --gold-dim:#A8792C;
-    --paper:#F2F5F8;
-    --ground:#EEF1F4;
-    --card:#FFFFFF;
-    --rule:#C9D2DB;
-    --slate:#5A6878;
-    --slate-lt:#9BAABF;
+:root{
+  --ink:#0D1926;
+  --ink-2:#152739;
+  --paper:#F3F0E9;
+  --paper-2:#E8E3D8;
+  --brass:#B4894A;
+  --slate:#7A8A9D;
+  --slate-d:#5B6A7B;
+  --rule-l:rgba(243,240,233,.14);
+  --rule-d:rgba(13,25,38,.14);
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink);color:var(--paper);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+a{color:inherit}
 
-    --display:'Archivo',system-ui,sans-serif;
-    --body:'Source Serif 4',Georgia,serif;
-    --mono:'IBM Plex Mono',ui-monospace,monospace;
-    --maxw:1100px;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0;background:var(--ground);color:var(--navy);
-    font-family:var(--body);font-size:17px;line-height:1.62;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{
-    max-width:var(--maxw);margin-left:auto;margin-right:auto;
-    padding-left:30px;padding-right:30px;
-  }
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule-l)}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:26px;padding-bottom:26px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:38px;width:auto;display:block}
+.brand .name{
+  font-family:"Newsreader",Georgia,serif;font-size:20px;font-weight:400;
+  letter-spacing:.055em;color:var(--paper);white-space:nowrap;
+}
+.mh-mail{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12.5px;
+  letter-spacing:.02em;color:var(--slate);text-decoration:none;
+  border-bottom:1px solid transparent;padding-bottom:2px;transition:color .18s,border-color .18s;
+}
+.mh-mail:hover,.mh-mail:focus-visible{color:var(--brass);border-bottom-color:var(--brass)}
 
-  /* ===================== dark zone ===================== */
-  .zone-dark{
-    position:relative;overflow:hidden;
-    background:linear-gradient(168deg,var(--navy-hi) 0%,var(--navy) 46%,var(--navy-lo) 100%);
-    color:var(--paper);
-  }
-  .zone-dark::before{
-    content:"";position:absolute;inset:0;pointer-events:none;
-    background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.032) 0 1px,transparent 1px 68px);
-  }
-  .zone-dark::after{
-    content:"";position:absolute;pointer-events:none;
-    width:760px;height:760px;left:-160px;top:-330px;
-    background:radial-gradient(circle,rgba(196,145,56,.13) 0%,rgba(196,145,56,.04) 42%,transparent 68%);
-  }
-  .zone-dark > *{position:relative;z-index:1}
+/* ---------- hero ---------- */
+.hero{padding:96px 0 132px;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:1px;background:var(--rule-l);
+}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 30px;
+}
+h1{
+  font-family:"Newsreader",Georgia,serif;font-weight:300;
+  font-size:clamp(2.6rem,6.4vw,4.5rem);line-height:1.04;letter-spacing:-.018em;
+  margin:0 0 30px;max-width:15ch;
+}
+h1 em{font-style:italic;color:var(--brass)}
+.lede{
+  font-size:clamp(1.02rem,1.9vw,1.2rem);line-height:1.62;color:#C7CEd6;
+  max-width:54ch;margin:0;font-weight:400;
+}
 
-  /* ---- masthead ---- */
-  .mast{border-bottom:1px solid rgba(242,245,248,.14)}
-  .mast-in{
-    max-width:var(--maxw);margin:0 auto;padding:22px 30px;
-    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
-  }
-  .mast-logo{height:52px;width:auto;display:block}
-  .mast-locus{
-    font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;
-    text-transform:uppercase;color:var(--gold);
-  }
+/* ---------- signature: the field record ---------- */
+.record-zone{background:var(--paper);color:var(--ink);position:relative;padding-bottom:64px}
+.record{
+  margin:-92px 0 0;background:#fff;
+  border:1px solid var(--rule-d);box-shadow:0 26px 60px -34px rgba(13,25,38,.55);
+  max-width:660px;
+}
+.record-head{
+  display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:18px 26px;border-bottom:1px solid var(--rule-d);background:var(--paper-2);
+}
+.record-head .lbl{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate-d);
+}
+.record-head .fund{font-size:13.5px;color:var(--ink);font-weight:500}
+.record-value{padding:26px 26px 20px;display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.record-value .field{font-size:15px;color:var(--slate-d)}
+.record-value .num{
+  font-family:"Newsreader",Georgia,serif;font-size:44px;font-weight:400;
+  line-height:1;letter-spacing:-.01em;
+}
+.record-value .num span{font-size:20px;color:var(--slate-d);margin-left:4px}
+.record dl{margin:0;padding:0 26px 26px;border-top:1px solid var(--rule-d);padding-top:20px}
+.record .row{
+  display:grid;grid-template-columns:104px 1fr;gap:14px;align-items:baseline;
+  padding:7px 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;
+}
+.record dt{color:var(--slate-d);letter-spacing:.1em;text-transform:uppercase;font-size:10.5px}
+.record dd{margin:0;color:var(--ink)}
+.record .q{color:var(--brass);font-weight:500}
+.record-note{
+  padding:14px 26px;border-top:1px solid var(--rule-d);background:var(--paper-2);
+  font-size:12.5px;color:var(--slate-d);line-height:1.5;
+}
 
-  /* ---- hero ---- */
-  .hero{padding-top:86px;padding-bottom:172px}
-  .kicker{display:flex;align-items:center;gap:14px;margin:0 0 26px}
-  .kicker span{
-    font-family:var(--mono);font-size:11.5px;letter-spacing:.15em;
-    text-transform:uppercase;color:var(--gold);
-  }
-  .kicker::before{content:"";width:44px;height:2px;background:var(--gold);flex:none}
-  h1{
-    font-family:var(--display);font-weight:700;
-    font-size:clamp(2.5rem,5.9vw,4.5rem);
-    line-height:1.0;letter-spacing:-.03em;
-    margin:0 0 30px;max-width:19ch;color:#fff;
-  }
-  .lede{
-    font-size:clamp(1.08rem,1.75vw,1.32rem);line-height:1.56;
-    max-width:60ch;margin:0;color:#C7D4E4;
-  }
+/* ---------- light sections ---------- */
+.light{background:var(--paper);color:var(--ink);padding-bottom:96px}
+.sec-label{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--slate-d);margin:0 0 26px;
+  padding-bottom:12px;border-bottom:1px solid var(--rule-d);
+}
+h2{
+  font-family:"Newsreader",Georgia,serif;font-weight:400;
+  font-size:clamp(1.65rem,3.4vw,2.2rem);line-height:1.18;letter-spacing:-.012em;
+  margin:0 0 18px;max-width:22ch;
+}
+.body-copy{font-size:16.5px;line-height:1.68;color:#2A3949;max-width:62ch;margin:0 0 44px}
 
-  /* ===================== light zone ===================== */
-  .zone-light{background:var(--ground);padding-bottom:8px}
+/* spec table */
+.spec{width:100%;border-collapse:collapse;border-top:1px solid var(--ink)}
+.spec tr{border-bottom:1px solid var(--rule-d)}
+.spec th{
+  text-align:left;vertical-align:top;padding:26px 28px 26px 0;width:210px;
+  font-family:"Newsreader",Georgia,serif;font-size:22px;font-weight:400;letter-spacing:-.01em;
+}
+.spec td{vertical-align:top;padding:26px 0;font-size:15.4px;line-height:1.6;color:#2A3949}
+.spec .aside{
+  display:block;margin-top:12px;font-family:"IBM Plex Mono",monospace;
+  font-size:12px;letter-spacing:.01em;color:var(--slate-d);
+}
+.spec .neg{color:#8A4B3A}
 
-  /* ---- straddling card: the signature ---- */
-  .sri{
-    background:var(--card);border:1px solid var(--rule);
-    border-top:3px solid var(--gold);
-    padding:30px 32px 26px;max-width:690px;
-    margin-top:-120px;
-    box-shadow:0 26px 54px -22px rgba(15,29,52,.38),0 4px 12px -6px rgba(15,29,52,.14);
-  }
-  .sri-top{
-    display:flex;align-items:baseline;justify-content:space-between;
-    gap:16px;flex-wrap:wrap;margin:0 0 20px;
-  }
-  .sri-title{
-    font-family:var(--mono);font-size:11px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--navy);margin:0;
-  }
-  .sri-ref{
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
-    text-transform:uppercase;color:var(--slate);margin:0;
-  }
-  .scale{position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;overflow:hidden}
-  .cell{
-    aspect-ratio:1.5/1;border:1px solid var(--navy);
-    display:flex;align-items:center;justify-content:center;
-    font-family:var(--mono);font-size:16px;font-weight:500;color:var(--navy);
-  }
-  .scale::after{
-    content:"";position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(90deg,transparent 0%,rgba(196,145,56,.42) 46%,rgba(196,145,56,.07) 60%,transparent 74%);
-    transform:translateX(-105%);
-    animation:sweep 1600ms cubic-bezier(.22,.68,.24,1) 560ms 1 both;
-  }
-  @keyframes sweep{to{transform:translateX(105%)}}
-  .scale-legend{
-    display:flex;justify-content:space-between;margin-top:12px;
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
-    text-transform:uppercase;color:var(--slate);
-  }
-  .sri-note{
-    margin:22px 0 0;font-size:14.5px;line-height:1.55;color:#3E4C60;
-    border-top:1px solid var(--rule);padding-top:16px;
-  }
+/* quality ladder */
+.ladder{margin:56px 0 0;border-top:1px solid var(--rule-d);padding-top:34px}
+.ladder h3{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--slate-d);font-weight:500;margin:0 0 22px;
+}
+.steps{display:flex;flex-wrap:wrap;gap:2px;margin:0 0 16px;padding:0;list-style:none}
+.steps li{flex:1 1 128px;min-width:128px;padding:14px 14px 16px;background:var(--paper-2)}
+.steps li:nth-child(n+4){background:var(--ink);color:var(--paper)}
+.steps .code{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;
+  letter-spacing:.1em;display:block;margin-bottom:5px;color:var(--slate-d);
+}
+.steps li:nth-child(n+4) .code{color:var(--brass)}
+.steps .desc{font-size:13px;line-height:1.42;display:block}
+.ladder p{font-size:13.5px;color:var(--slate-d);margin:0;max-width:62ch;line-height:1.55}
 
-  /* ---- panels ---- */
-  .panels{padding-top:78px;padding-bottom:0}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule)}
-  .panel{
-    background:var(--card);padding:32px 28px 36px;
-    border-top:3px solid transparent;transition:border-color .28s ease;
-  }
-  .panel:hover{border-top-color:var(--gold)}
-  .panel-tag{
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;
-    text-transform:uppercase;color:var(--gold-dim);margin:0 0 16px;
-  }
-  .panel h2{
-    font-family:var(--display);font-weight:600;font-size:1.3rem;
-    letter-spacing:-.014em;margin:0 0 13px;line-height:1.2;color:var(--navy);
-  }
-  .panel p{margin:0;font-size:15.5px;line-height:1.58;color:#3E4C60}
-  .tagline{
-    display:inline-block;margin-top:18px;
-    font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
-    text-transform:uppercase;color:var(--slate);
-    border:1px solid var(--rule);padding:5px 10px;
-  }
-  .cite{
-    margin-top:1px;background:var(--card);border-top:1px solid var(--gold);
-    padding:18px 28px;display:flex;flex-wrap:wrap;gap:9px 34px;
-    font-family:var(--mono);font-size:11px;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--slate);
-  }
+/* ---------- horizon note ---------- */
+.horizon{background:var(--ink-2);color:var(--paper);padding:76px 0}
+.horizon .wrap{display:grid;grid-template-columns:150px 1fr;gap:38px;align-items:start}
+.horizon .date{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;
+  color:var(--brass);text-transform:uppercase;line-height:1.5;padding-top:7px;
+}
+.horizon p{margin:0;font-size:clamp(1.05rem,2.1vw,1.32rem);line-height:1.56;color:#D5DBE2;max-width:56ch;font-weight:300}
+.horizon p + p{margin-top:18px;font-size:15px;color:var(--slate);font-weight:400}
 
-  /* ===================== closing ===================== */
-  .closing{padding-top:88px;padding-bottom:34px}
-  .closing h2{
-    font-family:var(--display);font-weight:700;
-    font-size:clamp(1.6rem,3.1vw,2.25rem);letter-spacing:-.022em;
-    margin:0 0 22px;max-width:25ch;line-height:1.1;color:#fff;
-  }
-  .closing p{max-width:58ch;margin:0 0 34px;font-size:17px;color:#C7D4E4}
-  .mail{
-    display:inline-block;font-family:var(--mono);font-size:15.5px;
-    color:var(--paper);text-decoration:none;
-    border-bottom:2px solid var(--gold);padding-bottom:4px;
-    transition:color .2s ease;
-  }
-  .mail:hover{color:var(--gold)}
-  .mail:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
-  .colophon{
-    border-top:1px solid rgba(242,245,248,.14);
-    margin-top:56px;padding-top:22px;padding-bottom:34px;
-    font-family:var(--mono);font-size:11px;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--slate-lt);
-  }
+/* ---------- contact ---------- */
+.contact{background:var(--ink);padding:88px 0 32px}
+.contact h2{color:var(--paper);margin-bottom:16px}
+.contact .body-copy{color:#B9C2CC;margin-bottom:34px}
+.mail{
+  display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:clamp(15px,2.4vw,19px);
+  letter-spacing:.01em;color:var(--brass);text-decoration:none;
+  border-bottom:1px solid rgba(180,137,74,.4);padding-bottom:5px;transition:border-color .18s;
+}
+.mail:hover,.mail:focus-visible{border-bottom-color:var(--brass)}
+.colophon{
+  margin-top:76px;padding-top:24px;border-top:1px solid var(--rule-l);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.04em;color:var(--slate-d);
+}
 
-  /* ---------- load-in ---------- */
-  .rise{opacity:0;transform:translateY(15px);animation:rise 780ms cubic-bezier(.2,.7,.2,1) forwards}
-  .d1{animation-delay:60ms}.d2{animation-delay:180ms}.d3{animation-delay:300ms}.d4{animation-delay:440ms}
-  @keyframes rise{to{opacity:1;transform:none}}
+/* ---------- motion ---------- */
+.rise{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.22,.7,.3,1) forwards}
+.d1{animation-delay:.06s}.d2{animation-delay:.16s}.d3{animation-delay:.28s}.d4{animation-delay:.4s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .rise{animation:none;opacity:1;transform:none}
+}
 
-  @media (max-width:860px){
-    .grid{grid-template-columns:1fr}
-    .hero{padding-top:60px;padding-bottom:132px}
-    .sri{margin-top:-92px}
-    .cell{font-size:14px}
-  }
-  @media (max-width:560px){
-    .wrap{padding-left:20px;padding-right:20px}
-    .mast-in{padding-left:20px;padding-right:20px}
-    .mast-logo{height:40px}
-    .hero{padding-bottom:112px}
-    .sri{margin-top:-74px;padding:22px 20px 20px}
-    .panel{padding:26px 20px 30px}
-    .cite{padding:16px 20px}
-    .scale{gap:4px}
-    .cell{font-size:12.5px}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .rise{animation:none;opacity:1;transform:none}
-    .scale::after{animation:none;opacity:0}
-    .panel{transition:none}
-  }
+/* ---------- responsive ---------- */
+@media (max-width:720px){
+  .wrap{padding:0 22px}
+  .hero{padding:64px 0 108px}
+  .record{margin-top:-76px}
+  .record-value{padding:22px 20px 16px}
+  .record-value .num{font-size:36px}
+  .record-head{padding:16px 20px}
+  .record dl{padding-left:20px;padding-right:20px}
+  .record .row{grid-template-columns:1fr;gap:3px;padding:9px 0;font-size:13px}
+  .record-note{padding:14px 20px}
+  .spec th{display:block;width:auto;padding:24px 0 6px}
+  .spec td{display:block;padding:0 0 24px}
+  .horizon .wrap{grid-template-columns:1fr;gap:14px}
+  .horizon .date{padding-top:0}
+  .masthead .wrap{padding-top:20px;padding-bottom:20px}
+  .mh-mail{display:none}
+}
 </style>
 </head>
 <body>
 
-<div class="zone-dark">
-  <header class="mast">
-    <div class="mast-in">
-      <img class="mast-logo" src="logo-light.png" alt="Riverwood Finance">
-      <div class="mast-locus">Delaware, USA</div>
-    </div>
-  </header>
-
-  <section class="wrap hero">
-    <p class="kicker rise d1"><span>Regulatory disclosure production</span></p>
-    <h1 class="rise d2">The engine behind Europe's key information documents</h1>
-    <p class="lede rise d3">
-      Every investment fund marketed to retail or semi-professional investors in the European
-      Union must publish a key information document setting out its costs, its risk and its
-      performance scenarios — in the official language of each country where it is sold,
-      reviewed every year.
-    </p>
-  </section>
-</div>
-
-<div class="zone-light">
+<header class="masthead">
   <div class="wrap">
-    <div class="sri rise d4">
-      <div class="sri-top">
-        <p class="sri-title">Summary risk indicator</p>
-        <p class="sri-ref">Annex III &middot; 2017/653</p>
+    <a class="brand" href="/">
+      <img src="logo.png" alt="Riverwood Finance">
+    </a>
+    <a class="mh-mail" href="mailto:info@riverwoodfinance.com">info@riverwoodfinance.com</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow rise d1">Private and illiquid funds · Europe</p>
+    <h1 class="rise d2">Every number, back to <em>its source</em>.</h1>
+    <p class="lede rise d3">
+      Key information documents, normalised cost and risk data, and product governance
+      for funds that have no price series to calculate from.
+    </p>
+  </div>
+</section>
+
+<section class="record-zone">
+  <div class="wrap">
+    <figure class="record rise d4">
+      <div class="record-head">
+        <span class="lbl">Field record</span>
+        <span class="fund">Unlisted real estate fund · DKK</span>
       </div>
-      <div class="scale" role="img" aria-label="The summary risk indicator scale, numbered one through seven, from lower risk to higher risk.">
-        <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
-        <div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
-        <div class="cell">7</div>
+      <div class="record-value">
+        <span class="field">Ongoing costs</span>
+        <span class="num">2.18<span>%</span></span>
       </div>
-      <div class="scale-legend"><span>Lower risk</span><span>Higher risk</span></div>
-      <p class="sri-note">
-        This scale appears in every key information document in Europe. Behind it sit a
-        volatility-based risk measure, a credit assessment, four performance scenarios and a
-        full cost disclosure — each governed by prescribed method.
+      <dl>
+        <div class="row"><dt>Source</dt><dd>KID p. 3 — cost composition table</dd></div>
+        <div class="row"><dt>Basis</dt><dd>Per year, of the value of the investment</dd></div>
+        <div class="row"><dt>State</dt><dd class="q">Q3 — normalised for currency, period and fee basis</dd></div>
+        <div class="row"><dt>Peer</dt><dd>62nd percentile — unlisted real estate, 10-year horizon</dd></div>
+        <div class="row"><dt>Captured</dt><dd>2026-08-03 · sha256 4f2a…c19b</dd></div>
+      </dl>
+      <figcaption class="record-note">
+        A cost figure is not comparable until you know what it was calculated on.
+        Two documents can print the same label and measure different things.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <p class="sec-label">What we build</p>
+    <h2>Three products, one data model.</h2>
+    <p class="body-copy">
+      Funds without market data are the hard case. There is no price series, so the risk measure
+      has to be established by proxy, the scenarios have to be calibrated by judgment, and the
+      costs have to be traced through the structures beneath the fund. That work does not get
+      cheaper by running it faster — it gets safer by writing down what was decided and why.
+    </p>
+
+    <table class="spec">
+      <tr>
+        <th>Workbench</th>
+        <td>
+          Structured intake, deterministic calculation and explicit points where a judgment is
+          required rather than assumed. Every delivery is archived with its inputs, its engine
+          version and its approver, so it can be recreated exactly as it stood.
+          <span class="aside">White label for law firms, compliance houses and administrators</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Fund Data</th>
+        <td>
+          Cost, risk and scenario fields drawn from published documents and normalised for
+          currency, reporting period, fee basis and calculation method. Every field carries a
+          source reference, a capture timestamp and a quality state.
+          <span class="aside">Nordic coverage first, then wider European</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Product Governance</th>
+        <td>
+          Cost benchmarks against a defined peer group, detection of disclosure anomalies such as
+          a stress scenario that outperforms the unfavourable one, method deviation against
+          comparable funds, and monitoring of what changed between versions.
+          <span class="aside neg">Not investment advice. No fund rankings, no return forecasts.</span>
+        </td>
+      </tr>
+    </table>
+
+    <div class="ladder">
+      <h3>Quality state</h3>
+      <ul class="steps">
+        <li><span class="code">Q0</span><span class="desc">Document captured and hashed</span></li>
+        <li><span class="code">Q1</span><span class="desc">Fields extracted with confidence score</span></li>
+        <li><span class="code">Q2</span><span class="desc">Checked against the document</span></li>
+        <li><span class="code">Q3</span><span class="desc">Normalised for basis and period</span></li>
+        <li><span class="code">Q4</span><span class="desc">Cleared for a named peer group</span></li>
+        <li><span class="code">Q5</span><span class="desc">Underlying method note held</span></li>
+      </ul>
+      <p>
+        Capture and extraction are becoming commodities. Everything from Q3 upward requires
+        knowing how the number was produced — which is the part that cannot be automated away.
       </p>
     </div>
   </div>
+</section>
 
-  <section class="wrap panels">
-    <div class="grid">
-      <article class="panel">
-        <p class="panel-tag">The requirement</p>
-        <h2>It follows the sale, not the fund</h2>
-        <p>
-          The obligation attaches to where a fund is marketed, not where it is established.
-          A Luxembourg fund sold to Danish investors needs a Danish document. A US sponsor
-          raising European capital needs one in every market it approaches.
-        </p>
-      </article>
-      <article class="panel">
-        <p class="panel-tag">The engine</p>
-        <h2>Repeatable, and traceable</h2>
-        <p>
-          A versioned calculation framework for the risk indicator, cost disclosure and
-          performance scenarios, coupled with a controlled production pipeline. Every figure
-          traces to its source; every document to the model version that produced it.
-        </p>
-      </article>
-      <article class="panel">
-        <p class="panel-tag">The data</p>
-        <h2>A record of what funds disclose</h2>
-        <p>
-          Published key information documents are public. Structured together, they show what
-          European funds actually charge, the risk they report and the holding periods they
-          recommend — the basis for peer comparison.
-        </p>
-        <span class="tagline">In development</span>
-      </article>
+<section class="horizon">
+  <div class="wrap">
+    <p class="date">10 January<br>2028</p>
+    <div>
+      <p>
+        From that date, PRIIP key information documents must be submitted to national collection
+        bodies and made available through the European Single Access Point.
+      </p>
+      <p>
+        Finding the documents stops being difficult. Knowing whether two of them can be compared
+        does not. Riverwood is built for the second problem.
+      </p>
     </div>
-    <div class="cite">
-      <span>Regulation (EU) No 1286/2014</span>
-      <span>Delegated Regulation (EU) 2017/653</span>
-      <span>AIFMD &middot; UCITS</span>
-    </div>
-  </section>
-</div>
+  </div>
+</section>
 
-<div class="zone-dark">
-  <section class="wrap closing">
-    <h2>Built for our own production, and for others'</h2>
-    <p>
-      Riverwood Finance is building this engine to produce European disclosure documents to a
-      standard that holds up under supervisory scrutiny — for its own work, and for advisory
-      firms and fund managers who need the same. We welcome enquiries from either.
+<section class="contact">
+  <div class="wrap">
+    <p class="sec-label" style="color:var(--slate-d);border-bottom-color:var(--rule-l)">Contact</p>
+    <h2>Enquiries</h2>
+    <p class="body-copy">
+      We are interested in conversations with fund managers, administrators, compliance practices
+      and law firms working with private and illiquid funds in the Nordic region and wider Europe.
     </p>
     <a class="mail" href="mailto:info@riverwoodfinance.com">info@riverwoodfinance.com</a>
-    <div class="colophon">&copy; 2026 Riverwood Finance &nbsp;&middot;&nbsp; Delaware, USA</div>
-  </section>
-</div>
+    <div class="colophon">
+      <span>© 2026 Riverwood Finance</span>
+      <span>In development · methods in production use on live fund documentation</span>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
