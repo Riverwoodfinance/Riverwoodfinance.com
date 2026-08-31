@@ -55,7 +55,7 @@ a{color:inherit}
   text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:700;
   color:var(--teal); margin-bottom:18px;
 }
-.hero-grid{display:grid; grid-template-columns:1.06fr .94fr; gap:64px; align-items:center}
+.hero-grid{display:grid; grid-template-columns:1.02fr .98fr; gap:52px; align-items:center}
 h1{
   font-family: Georgia, "Times New Roman", serif;
   font-weight:500; color:var(--navy); font-size:clamp(44px,6.1vw,79px);
@@ -84,8 +84,8 @@ h1{
 .metric strong{color:var(--navy); font-size:15px}
 .record-note{margin:18px 0 0; font-size:13px; color:var(--muted)}
 
-.hero-visual{position:relative; z-index:2}
-.hero-visual img{width:100%; height:auto; display:block}
+.hero-visual{position:relative; z-index:2; display:flex; justify-content:flex-end; align-items:center}
+.hero-visual img{width:112%; max-width:none; height:auto; display:block; margin-right:-36px}
 
 .band{background:var(--navy); color:white; padding:26px 0}
 .band-inner{display:flex; gap:28px; align-items:center; justify-content:space-between}
@@ -173,6 +173,8 @@ footer{padding:34px 0 46px; background:var(--paper); font-size:12px; color:#7180
   .navlinks a:not(.nav-cta){display:none}
   .hero-grid,.split,.discovery,.contact-grid{grid-template-columns:1fr}
   .hero{padding-top:58px}
+  .hero-visual{margin-top:10px}
+  .hero-visual img{width:100%; margin-right:0}
   .record{margin-top:8px}
   .flow{grid-template-columns:repeat(2,1fr)}
   .flow div{border-bottom:1px solid var(--line)}
